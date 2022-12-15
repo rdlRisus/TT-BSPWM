@@ -49,8 +49,4 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 setxkbmap us &
-nitrogen --restore &
-lxsession &
-polybar --config="$HOME/.config/polybar/config.ini" &
-picom -fb &
 exec bspwm
