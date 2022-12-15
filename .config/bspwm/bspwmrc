@@ -1,6 +1,11 @@
 #! /bin/sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
+xrandr -s 1920x1080 &
+nitrogen --restore &
+lxsession &
+polybar --config="$HOME/.config/polybar/config.ini" &
+picom -fb &
 
 bspc monitor -d I II III IV V 
 
